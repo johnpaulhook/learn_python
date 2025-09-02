@@ -54,32 +54,44 @@ while True:
     elif guess != word:
         print(" Not correct, try again.")
         guesses += 1
-    elif guesses == 6:
+    
+    if guesses == 6:
         break
     
     if (g_letters[0] == letters[0]):
         print("the first letter is correct")
+    elif g_letters[0] in letters[1:]:
+        print ("the first letter of your guess is in the word")
     else:
         print("the first letter is not correct")
         
     if (g_letters[1] == letters[1]):
         print("the second letter is correct")
+    elif g_letters[1] in letters[1:]:
+        print ("the second letter of your guess is in the word")
     else:
         print("the second letter is not correct")
         
     if (g_letters[2] == letters[2]):
         print("the third letter is correct")
+    elif g_letters[2] in letters[1:]:
+        print ("the third letter of your guess is in the word")
     else:
         print("the third letter is not correct")
         
     if (g_letters[3] == letters[3]):
         print("the fourth letter is correct")
+    elif g_letters[3] in letters[1:]:
+        print ("the fourth letter of your guess is in the word")
     else:
         print("the fourth letter is not correct")
         
     if (g_letters[4] == letters[4]):
         print("the fith letter is correct")
+    elif g_letters[4] in letters[1:]:
+        print ("the fith letter of your guess is in the word")
     else:
         print("the fith letter is not correct")
         
-print (g_letters)
+    
+        
