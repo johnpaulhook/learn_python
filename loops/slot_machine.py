@@ -1,11 +1,11 @@
 import random
-
+import time
 coins = 200000
 while True:
-    computer1 = random.randint(1, 200000)
-    computer2 = random.randint(1, 200000)
-    computer3 = random.randint(1, 200000)
-
+    computer1 = random.randint(1, 20)
+    computer2 = random.randint(1, 20)
+    computer3 = random.randint(1, 20)
+    time.sleep(0.25)
     print(computer1, computer2, computer3)
     if coins == 0:
             break
@@ -17,4 +17,3 @@ while True:
         print("no jackpot")
         coins -= 1
         continue
-    
